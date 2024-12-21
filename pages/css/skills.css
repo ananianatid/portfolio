@@ -1,0 +1,43 @@
+
+.container{
+    width: 70vw;
+    height: 100%;
+
+}
+ 
+.subcontainer{
+    margin: 50px 0 ;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #F5FBF5;
+    box-shadow: #46A758 0px 5px 15px;
+    border: 1px solid #65BA74;
+    height: fit-content;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.subcontainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.subcontainer  img{
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+}
+.description{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px 0 ;
+}
+.section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
