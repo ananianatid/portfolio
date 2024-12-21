@@ -1,5 +1,13 @@
 
-
+body{
+    /*
+    background-color: var(--main-back-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.28' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    */
+    background-color: #211f26;
+background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z' fill='%23f2eff3' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+    
+}
 .container{
     width: 70vw;
     height: 100%;
@@ -18,8 +26,8 @@
 }
 .display{
     color: #64172B;
-    height: 50vh;
-    width: 50vw;
+    height: 60vh;
+    width: 60vw;
     margin: 50px;
     border: 1px solid #E592A3;
     box-shadow: #E54666 0px 5px 15px;
@@ -31,6 +39,7 @@
     background: #feeaed;
 }
 .display p {
+    font-size: 30px;
     margin: 10px 0;
 }
 .MultiStepProgressBar{

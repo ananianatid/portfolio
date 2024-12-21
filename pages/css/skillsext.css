@@ -1,0 +1,171 @@
+/* Couleurs légèrement désaturées pour la base */
+.html {
+    background-color: #cf6450; /* Couleur HTML atténuée */
+    noctella: url("/src/pages/html-5-svgrepo-com.svg");
+
+    color: #f2dcd8; /* Texte atténué */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+.html:hover {
+    background-color: #E34C26; /* Couleur iconique d'HTML */
+    color: white;
+    transform: scale(1.1);
+}
+
+.css {
+    background-color: #7a9cf5; /* Couleur CSS atténuée */
+    color: #e0e9f9; /* Texte atténué */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/css-svgrepo-com.svg");
+}
+.css:hover {
+    background-color: #2965F1; /* Bleu iconique du CSS */
+    color: white;
+    transform: scale(1.1);
+}
+
+.js {
+    background-color: #f7e98b; /* Couleur JS atténuée */
+    color: #333; /* Texte atténué */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/css-svgrepo-com.svg");
+}
+.js:hover {
+    background-color: #F7DF1E; /* Jaune iconique de JS */
+    color: black;
+    transform: scale(1.1);
+}
+
+.php {
+    background-color: #a59ac6; /* Couleur PHP atténuée */
+    color: #eceaf5; /* Texte atténué */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/php-svgrepo-com.svg");
+}
+.php:hover {
+    background-color: #787CB5; /* Couleur iconique de PHP */
+    color: white;
+    transform: scale(1.1);
+}
+
+.nodejs {
+    background-color: #9bcb9a; /* Couleur Node.js atténuée */
+    color: #eaf3ea; /* Texte atténué */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/nodejs-svgrepo-com.svg");
+}
+.nodejs:hover {
+    background-color: #68A063; /* Vert iconique de Node.js */
+    color: white;
+    transform: scale(1.1);
+}
+
+.sql {
+    background-color: #e29a96; /* Couleur SQL atténuée */
+    color: #fbeae9; /* Texte atténué */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/sql-database-generic-svgrepo-com.svg");
+}
+.sql:hover {
+    background-color: #CC2927; /* Rouge iconique de SQL */
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Couleurs légèrement désaturées pour la base */
+.Notion {
+    background-color: #B1B1B1; /* Couleur terne pour Notion */
+    color: #fff; /* Texte en blanc */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/notion-svgrepo-com.svg");
+}
+.Notion:hover {
+    background-color: #000000; /* Couleur iconique de Notion */
+    color: white;
+    transform: scale(1.1);
+}
+
+.Anytype {
+    background-color: #8A8A8A; /* Couleur terne pour Anytype */
+    color: #fff; /* Texte en blanc */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/anytype-svgrepo-com.svg");
+}
+.Anytype:hover {
+    background-color: #1D1D1D; /* Couleur iconique d'Anytype */
+    color: white;
+    transform: scale(1.1);
+}
+
+.Figma {
+    background-color: #f16439; /* Couleur terne pour Figma */
+    color: #333; /* Texte en gris foncé */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/figma-svgrepo-com.svg");
+}
+.Figma:hover {
+    background-color: #F24E1E; /* Couleur iconique de Figma */
+    color: white;
+    transform: scale(1.1);
+}
+
+.Blender {
+    background-color: #f79050; /* Couleur terne pour Blender */
+    color: #fff; /* Texte en blanc */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/blender-svgrepo-com.svg");
+}
+.Blender:hover {
+    background-color: #F5792A; /* Couleur iconique de Blender */
+    color: white;
+    transform: scale(1.1);
+}
+
+.Git {
+    background-color: #f0735d; /* Couleur terne pour Git */
+    color: #fff; /* Texte en blanc */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/git-svgrepo-com.svg");
+}
+.Git:hover {
+    background-color: #F05032; /* Rouge iconique de Git */
+    color: white;
+    transform: scale(1.1);
+}
+
+.github {
+    background-color: #888888; /* Couleur terne pour Github */
+    color: #fff; /* Texte en blanc */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/github-142-svgrepo-com.svg");
+}
+.github:hover {
+    background-color: #181717; /* Couleur iconique de Github */
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Couleurs légèrement désaturées pour la base */
+.Autocad {
+    background-color: #C4C4C4; /* Couleur terne pour Autocad */
+    color: #fff; /* Texte en blanc */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/autocad-svgrepo-com.svg");
+}
+.Autocad:hover {
+    background-color: #F26F20; /* Couleur iconique d'Autocad */
+    color: white;
+    transform: scale(1.1);
+}
+
+.Arduino {
+    background-color: #A8D8A5; /* Couleur terne pour Arduino */
+    color: #333; /* Texte en gris foncé */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    noctella: url("/src/pages/arduino-svgrepo-com.svg");
+}
+.Arduino:hover {
+    background-color: #009C3B; /* Couleur iconique d'Arduino */
+    color: white;
+    transform: scale(1.1);
+}
