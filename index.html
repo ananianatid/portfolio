@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages/css/index.css">
-    <link rel="stylesheet" href="/pages/css/general.css">
-    <link rel="stylesheet" href="/pages/css/form.css">
+    <link rel="stylesheet" href="pages/css/index.css">
+    <link rel="stylesheet" href="pages/css/general.css">
+    <link rel="stylesheet" href="pages/css/form.css">
+    <link rel="stylesheet" href="pages/css/header.css">
     <link rel="icon" type="image/x-icon" href="/src/cercle.png">
     <title>Acceuil</title>
 </head>
 <body>
     <div class="container">
-        <script src="/web-components/header.js" defer></script>
-        <wc-header></wc-header>
+        <header> 
+            <a href="index.html">
+                Acceuil
+            </a>
+            <a href="pages/html/school.html">
+                ecole
+            </a>
+            <a href="pages/html/projects.html">
+                Projets
+            </a>
+        </header>
         <div class="subcontainer">
             <div class="banner">
                 <div class="greetings">
@@ -26,19 +36,19 @@
                 </div>
                 <div class="social">
                     <a class="github" href="https://github.com/ananijoel" target="_blank">
-                        <img src="/src/social/github-142-svgrepo-com.svg" alt=""> <p>Github</p>
+                        <img src="src/social/github-142-svgrepo-com.svg" alt=""> <p>Github</p>
                     </a>
                     <a class="linkedIn" href="linkedin.com/in/anatide-anani-316128299" target="_blank">
-                        <img src="/src/social/linkedin-rounded-svgrepo-com.svg" alt=""> <p>LinkedIn</p>
+                        <img src="src/social/linkedin-rounded-svgrepo-com.svg" alt=""> <p>LinkedIn</p>
                     </a>
                     <a class="instagram" href="https://www.instagram.com/ananijoell" target="_blank">
-                        <img src="/src/social/instagram-svgrepo-com.svg" alt=""> <p>Instagram</p>
+                        <img src="src/social/instagram-svgrepo-com.svg" alt=""> <p>Instagram</p>
                     </a>
                     <a href="https://x.com/anatide_anani" target="_blank">
-                        <img src="/src/social/TwitterX.svg" alt=""> <p>X.com</p>
+                        <img src="src/social/TwitterX.svg" alt=""> <p>X.com</p>
                     </a>
                     <a href="mailto:ananijoellanatide@gmail.com" class="gmail" >
-                        <img src="/src/social/gmail-svgrepo-com.svg" alt=""> <p>Gmail</p>
+                        <img src="src/social/gmail-svgrepo-com.svg" alt=""> <p>Gmail</p>
                     </a>
                 </div>
                 <div class="about">
@@ -126,7 +136,7 @@
                     <p>Ou bien, remplissez ce formulaire et appuyez sur le bouton "Envoyer" !📝⬇️</p>
                 </div>
                 
-                <form action="/contact.php" method="post" class="contact-form">
+                <form action="contact.php" method="post" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="name" placeholder="Votre nom" required>

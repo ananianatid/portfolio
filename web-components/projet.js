@@ -4,7 +4,7 @@ class Projet extends HTMLElement {
         this.attachShadow({mode:'open'})
     }
     connectedCallback() {
-        fetch('/web-components/projet.html')
+        fetch('../../web-components/projet.html')
             .then(response => response.text())
             .then(html => {
                 this.shadowRoot.innerHTML = html

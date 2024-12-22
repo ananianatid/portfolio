@@ -4,7 +4,7 @@ class Header extends HTMLElement {
         this.attachShadow({mode:'open'})
     }
     connectedCallback() {
-        fetch('/web-components/header.html')
+        fetch('web-components/html/header.html')
             .then(response => response.text())
             .then(html => {
                 this.shadowRoot.innerHTML = html
