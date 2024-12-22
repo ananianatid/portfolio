@@ -51,6 +51,7 @@ h1 {
 
 .contact-form .form-group {
     margin-bottom: 15px;
+    width: 40%;
 }
 
 .contact-form label {
@@ -75,7 +76,7 @@ h1 {
 }
 
 .contact-form .submit-button {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     font-size: 2rem;
     color: #fff;
