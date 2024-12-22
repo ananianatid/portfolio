@@ -1,4 +1,6 @@
-
+*{
+    overflow-x: hidden;
+}
 .subcontainer{
     margin: 50px 0 ;
     padding: 20px;
