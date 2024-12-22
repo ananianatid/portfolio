@@ -1,0 +1,147 @@
+:root {
+    --sb-size: 14px;
+    --color1: #FDFCFD ;
+    --color2: #FAF9FB;
+    --color3: #F2EFF3;
+    --color4: #EAE7EC;
+    --color5: #E3DFE6;
+    --color6: #DBD8E0;
+    --color7: #D0CDD7;
+    --color8: #BCBAC7;
+    --color9: #8E8C99;
+    --color10: #84828E;
+    --color11: #65636D;
+    --color12: #211F26;
+}
+
+.contactlabel{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--color3);
+}
+.contactlabel > h1{
+    color: var(--color1);
+}
+.contactlabel > p{
+    margin: 0.5rem 0 ;
+}
+
+
+
+.contact-form-container {
+    
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 2rem;
+    color: var(--color1);
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .contactform{
+        margin-bottom: 3rem;
+    }
+    .contactlabel{
+        margin: 1rem 0;
+        padding: 1rem 0;
+        font-size: 1rem;
+        color: var(--color3);
+    }
+    .contactlabel > h1{
+        font-size: 2rem;
+        color: var(--color1);
+    }
+    .contactlabel > p{
+        margin: 0.5rem 0 ;
+    }
+    
+    
+    
+    .contact-form-container {
+        
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    h1 {
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .contact-form label {
+        font-size: 1rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+    
+    .contact-form textarea {
+        resize: none;
+    }
+    
+    .contact-form .submit-button {
+        font-size: 1rem;
+    }
+}

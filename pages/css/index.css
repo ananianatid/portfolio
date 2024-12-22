@@ -103,6 +103,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white ;
 }
 .skillstitle{
     width: 100%;
@@ -218,6 +220,8 @@
     background-color: #15959a;
     color: var(--color3);
 }
+
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body{

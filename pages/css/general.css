@@ -57,9 +57,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 3px;
 
 }
-wc-header{
-    border-bottom: 2px solid var(--firTexCo);
-}
 
 @supports not selector(::-webkit-scrollbar) {
     body {
