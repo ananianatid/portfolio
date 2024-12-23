@@ -1,48 +1,41 @@
 <?php
-//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-//Load Composer's autoloader
-//require 'vendor/autoload.php';
+// Charger l'autoloader de Composer
+require 'vendor/autoload.php';
 
-//Create an instance; passing `true` enables exceptions
+// Création d'une instance de PHPMailer
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;//SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'anatide.ulrichanani.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'anatidejlanani@anatide.ulrichanani.com';
-    $mail->Password   = 'KI7C79h1FWTG';
-    $mail->SMTPSecure = "tls";            
-    $mail->Port       = 465;
+    // Paramètres du serveur
+    $mail->SMTPDebug = SMTP::DEBUG_OFF; // Désactiver ou utiliser SMTP::DEBUG_SERVER pour des tests
+    $mail->isSMTP();
+    $mail->Host       = 'anatide.ulrichanani.com'; // Serveur SMTP
+    $mail->SMTPAuth   = true;                     // Activer l'authentification SMTP
+    $mail->Username   = 'anatidejlanani@anatide.ulrichanani.com'; // Nom d'utilisateur
+    $mail->Password   = 'your_password_here';     // Remplacez par le mot de passe de votre compte
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL/TLS
+    $mail->Port       = 465;                      // Port SMTP pour SSL
 
-    //Recipients
-    $mail->setFrom('anatidejlanani@gmail.com', 'Mailer');
-    $mail->addAddress($mailtosend, 'User');     //Add a recipient
-    $mail->addAddress('ellen@example.com');               //Name is optional
-    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');
+    // Destinataires
+    $mail->setFrom('anatidejlanani@anatide.ulrichanani.com', 'Mailer'); // Adresse de l'expéditeur
+    $mail->addAddress('user@example.com', 'User'); // Ajouter un destinataire
+    $mail->addReplyTo('info@example.com', 'Information'); // Optionnel : adresse de réponse
 
-    //Attachments
-    /*
-    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-    */
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    // Contenu
+    $mail->isHTML(true);                          // Format email HTML
+    $mail->Subject = 'Secure Email Test';
+    $mail->Body    = 'This is the <b>HTML</b> message body.';
+    $mail->AltBody = 'This is the plain text message body for non-HTML mail clients.';
 
+    // Envoi de l'email
     $mail->send();
-    echo 'Message has been sent';
+    echo 'Message has been sent successfully!';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // Gestion des erreurs
+    error_log("Mailer Error: {$mail->ErrorInfo}"); // Journaliser les erreurs
+    echo 'Message could not be sent. Please try again later.';
 }
