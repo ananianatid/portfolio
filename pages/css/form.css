@@ -20,7 +20,7 @@
 .contactlabel{
     margin: 1rem 0;
     padding: 1rem 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--color3);
 }
 .contactlabel > h1{
@@ -56,7 +56,7 @@ h1 {
 
 .contact-form label {
     display: block;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--color1);
     margin-bottom: 5px;
 }
@@ -65,7 +65,7 @@ h1 {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
@@ -76,7 +76,8 @@ h1 {
 }
 
 .contact-form .submit-button {
-    width: 40%;
+    width: 20%;
+    min-width: 300px;
     padding: 10px;
     font-size: 2rem;
     color: #fff;
@@ -128,6 +129,7 @@ h1 {
     
     .contact-form .form-group {
         margin-bottom: 15px;
+        width: 100%;
     }
     
     .contact-form label {
@@ -137,6 +139,7 @@ h1 {
     .contact-form input,
     .contact-form textarea {
         font-size: 1rem;
+        
     }
     
     .contact-form textarea {
@@ -145,5 +148,8 @@ h1 {
     
     .contact-form .submit-button {
         font-size: 1rem;
+    }
+    .submit-button{
+        width: 50%;
     }
 }

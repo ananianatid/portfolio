@@ -1,0 +1,157 @@
+:root{
+    --color1: #FDFCFD ;
+    --color2: #FAF9FB;
+    --color3: #F2EFF3;
+    --color4: #EAE7EC;
+    --color5: #E3DFE6;
+    --color6: #DBD8E0;
+    --color7: #D0CDD7;
+    --color8: #BCBAC7;
+    --color9: #8E8C99;
+    --color10: #84828E;
+    --color11: #65636D;
+    --color12: #211F26;
+}
+.skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white ;
+}
+.skillstitle{
+    width: 100%;
+    color: var(--color3);
+    font-size: 4rem;
+    padding: 10px 0;
+    margin: 0 0 30px;
+    border-bottom: 3px solid var(--color3);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    border-radius: 10px;
+    border: 3px solid rgba(240, 46, 170, 0.4);
+    background-color: #EAE7EC;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    padding: 5px;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    width: 95%;
+    min-width: 813px;
+}
+.skill:nth-child(odd){
+    flex-direction: row;
+}
+.skill:nth-child(even){
+    flex-direction: row-reverse;
+}
+.skill-name{
+    border-radius: 10px;
+    width: 40%;
+    height: 200PX;
+    background-color: #BCBAC7;
+    display: fleX;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10px 10px 10px 10px;
+    font-size: 3.5rem;
+
+}
+.description{
+    width: 60%;
+    display: fleX;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAE7EC;
+}
+
+.skill-name.html{
+    background-color: #dd4b25;
+    color: var(--color3);
+
+}
+.skill-name.css{
+    background-color: #005ada;
+    color: var(--color3);
+}
+.skill-name.js{
+    background-color: #e8d44d;
+}
+.skill-name.nodejs{
+    background-color: #7fc728;
+
+}
+.skill-name.php {
+    background-color: #4d588e;
+    color: var(--color3);
+}
+.skill-name.sql{
+    background-color: #294d71;
+    color: var(--color3);
+}
+.skill-name.python{
+    color: var(--color3);
+    background: rgb(53,108,155);
+    background: linear-gradient(90deg, rgba(53,108,155,1) 50%, rgba(247,214,82,1) 50%);
+}
+.skill-name.notion{
+    background-color: var(--color12);
+    color: var(--color3);
+}
+.skill-name.anytype{
+    background-color: var(--color12);
+    color: var(--color3);
+}
+.skill-name.git{
+    background-color: #e84e31;
+    color: var(--color3);
+}
+.skill-name.github{
+    background-color:var(--color12);
+    color: var(--color3);
+}
+
+.skill-name.blender{
+    background-color: #e19601;
+    color: var(--color3);
+}
+
+.skill-name.figma{
+    background-color: #323232;
+    color: #ea4c1d;
+}
+
+.skill-name.autocad{
+    background-color: #de0f4d;
+    color: var(--color3);
+}
+.skill-name.arduino{
+    background-color: #15959a;
+    color: var(--color3);
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .skill{
+        min-width: 100%;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    }
+    .skillstitle{
+        font-size: 1.7rem;
+    }
+    .skill-name{
+        width: 100%;
+    height: 150PX;
+    }
+    .description{
+        display: none;
+    }
+}
