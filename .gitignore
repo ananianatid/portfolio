@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Composer files
+/vendor/
+
+# PHP and Laravel
+*.log
+*.env
+*.composer
+
+# MacOS system files
+.DS_Store
+
+# Thumbnails and other system files
+Thumbs.db
+__MACOSX
+
+# IDE or editor-specific files
+.idea/
+.vscode/
+
+# Zip files and archives
+*.zip
+*.rar
+
+# Compiled files
+*.phar
+
+# Temporary files
+*.swp
+*.swo
+
+# Backup files
+*~
