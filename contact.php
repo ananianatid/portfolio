@@ -17,7 +17,7 @@ try {
     $mail->SMTPAuth   = true;                     // Activer l'authentification SMTP
     $mail->Username   = 'anatidejlanani@anatide.ulrichanani.com'; // Nom d'utilisateur
     $mail->Password   = 'KI7C79h1FWTG';     // Remplacez par le mot de passe de votre compte
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL/TLS
+    $mail->SMTPSecure = "TLS"; // SSL/TLS
     $mail->Port       = 465;                      // Port SMTP pour SSL
 
     // Destinataires
