@@ -16,14 +16,14 @@ try {
     $mail->Host       = 'anatide.ulrichanani.com'; // Serveur SMTP
     $mail->SMTPAuth   = true;                     // Activer l'authentification SMTP
     $mail->Username   = 'anatidejlanani@anatide.ulrichanani.com'; // Nom d'utilisateur
-    $mail->Password   = 'your_password_here';     // Remplacez par le mot de passe de votre compte
+    $mail->Password   = 'KI7C79h1FWTG';     // Remplacez par le mot de passe de votre compte
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL/TLS
     $mail->Port       = 465;                      // Port SMTP pour SSL
 
     // Destinataires
     $mail->setFrom('anatidejlanani@anatide.ulrichanani.com', 'Mailer'); // Adresse de l'expéditeur
-    $mail->addAddress('user@example.com', 'User'); // Ajouter un destinataire
-    $mail->addReplyTo('info@example.com', 'Information'); // Optionnel : adresse de réponse
+    $mail->addAddress('anatidejlanani@gmail.com', 'User'); // Ajouter un destinataire
+    $mail->addReplyTo('anatidejlanani@gmail.com', 'Information'); // Optionnel : adresse de réponse
 
     // Contenu
     $mail->isHTML(true);                          // Format email HTML
