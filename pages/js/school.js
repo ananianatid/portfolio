@@ -5,10 +5,6 @@ const display = document.querySelector('.display')
 
 const diplomes = [
     {
-        titre: "venue au monde",
-        lieu: "Lomé, Togo",
-        anneeDebut: "2005",
-    },{
         titre: "CEPD (Certificat d'Étude du Premier Degré)",
         lieu: "Lomé, Togo",
         anneeDebut: "2008-2016",
@@ -39,6 +35,11 @@ const diplomes = [
         description: "Conception d'une maison à éclairage contrôlé par Bluetooth avec arduino",
         lieu: "Lomé, Togo",
         anneeDebut: "2022-2023",
+    },
+    {
+        titre: "licence 1",
+        lieu: "Lomé, Togo",
+        anneeDebut: "2023-2024",
     }
 ];
 
