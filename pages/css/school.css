@@ -1,4 +1,18 @@
-
+:root {
+    --sb-size: 14px;
+    --color1: #FDFCFD ;
+    --color2: #FAF9FB;
+    --color3: #F2EFF3;
+    --color4: #EAE7EC;
+    --color5: #E3DFE6;
+    --color6: #DBD8E0;
+    --color7: #D0CDD7;
+    --color8: #BCBAC7;
+    --color9: #8E8C99;
+    --color10: #84828E;
+    --color11: #65636D;
+    --color12: #211F26;
+}
 
 .subcontainer{
     border-radius: 5px;
@@ -11,18 +25,18 @@
     justify-content: center;
 }
 .display{
-    color: #64172B;
+    color: var(--color3);
     height: 60vh;
     width: 60vw;
     margin: 50px;
-    border: 1px solid #E592A3;
-    box-shadow: #E54666 0px 5px 15px;
+    border: 1px solid var(--color4);
+    box-shadow: var(--color7) 0px 5px 15px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #feeaed;
+    background: var(--color11);
 }
 .display p {
     font-size: 30px;
@@ -54,28 +68,28 @@
     font-size: 0.6rem;
     font-weight: 500;
     border-radius: 50%;
-    border: 7px solid #FEEAED;
+    border: 7px solid var(--color4);
     background: #fff;
     transition: all 200ms ease;
     transition-delay: 0s ;
 }
 .steps .circle.active{
     transition-delay: 100ms ;
-    border-color: #CA244D;
-    color: #CA244D;
+    border-color: var(--color11);
+    color: var(--color11);
 }
 .steps .progress{
     position: absolute;
     height: 7px;
     width: 100%;
-    background: #FEEAED;
+    background: var(--color1);
     z-index: -1;
 }
 .progress .indicator{
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #CA244D;
+    background: var(--color10);
     transition: all 300ms ease;
 }
 .MultiStepProgressBar .buttons{
@@ -84,7 +98,7 @@
 }
 .buttons button{
     padding: 8px 25px;
-    background: #CA244D;
+    background: var(--color12);
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -98,24 +112,20 @@
     transform: scale(0.97);
 }
 .buttons button:disabled{
-    background: #E592A3;
+    background: var(--color9);
     cursor: not-allowed;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .display{
-        color: #64172B;
         height: 60vh;
-        width: 95vw;
+        width: 90vw;
         margin: 50px;
-        border: 1px solid #E592A3;
-        box-shadow: #E54666 0px 5px 15px;
         border-radius: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background: #feeaed;
     }
     .display p {
         font-size: 1rem;
@@ -131,9 +141,9 @@
         width: 100%;
     }
     .steps .circle {
+        border: 4px solid var(--color4);
         height: 3rem;
         width:3rem;
         font-size: 0.5rem;
-        border: 3px solid #FEEAED;
     }
 }

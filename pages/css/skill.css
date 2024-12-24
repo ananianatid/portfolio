@@ -29,109 +29,100 @@
     border-bottom: 3px solid var(--color3);
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
-.skill{
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 0;
+.skilllist{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.skill {
     border-radius: 10px;
-    border: 3px solid rgba(240, 46, 170, 0.4);
+    width: 90%;
+    min-width: 90%;
+    height: 200px;
     background-color: #EAE7EC;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-    padding: 5px;
-    font-weight: 1000;
-    font-size: 1.2rem;
-    width: 95%;
-    min-width: 813px;
-}
-.skill:nth-child(odd){
-    flex-direction: row;
-}
-.skill:nth-child(even){
-    flex-direction: row-reverse;
-}
-.skill-name{
-    border-radius: 10px;
-    width: 40%;
-    height: 200PX;
-    background-color: #BCBAC7;
-    display: fleX;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 10px 10px 10px 10px;
-    font-size: 3.5rem;
-
+    font-size: 2.5rem;
+    margin: 25px 0;
+    border: 3px solid rgba(240, 46, 170, 0.4);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    padding: 5px;
+    font-weight: 1000;
+    
 }
-.description{
-    width: 60%;
-    display: fleX;
-    align-items: center;
-    justify-content: center;
-    background-color: #EAE7EC;
+.skill > div {
+    padding: 3rem;
 }
 
-.skill-name.html{
+.skill.html{
     background-color: #dd4b25;
     color: var(--color3);
 
 }
-.skill-name.css{
+.skill.css{
     background-color: #005ada;
     color: var(--color3);
 }
-.skill-name.js{
+.skill.js{
     background-color: #e8d44d;
 }
-.skill-name.nodejs{
+.skill.nodejs{
     background-color: #7fc728;
 
 }
-.skill-name.php {
+.skill.php {
     background-color: #4d588e;
     color: var(--color3);
 }
-.skill-name.sql{
+.skill.sql{
     background-color: #294d71;
     color: var(--color3);
 }
-.skill-name.python{
+.skill.python{
     color: var(--color3);
     background: rgb(53,108,155);
     background: linear-gradient(90deg, rgba(53,108,155,1) 50%, rgba(247,214,82,1) 50%);
 }
-.skill-name.notion{
+.skill.notion{
     background-color: var(--color12);
     color: var(--color3);
 }
-.skill-name.anytype{
+.skill.anytype{
     background-color: var(--color12);
     color: var(--color3);
 }
-.skill-name.git{
+.skill.git{
     background-color: #e84e31;
     color: var(--color3);
 }
-.skill-name.github{
+.skill.github{
     background-color:var(--color12);
     color: var(--color3);
 }
 
-.skill-name.blender{
+.skill.blender{
     background-color: #e19601;
     color: var(--color3);
 }
 
-.skill-name.figma{
+.skill.figma{
     background-color: #323232;
     color: #ea4c1d;
 }
 
-.skill-name.autocad{
+.skill.autocad{
     background-color: #de0f4d;
     color: var(--color3);
 }
-.skill-name.arduino{
+.skill.arduino{
     background-color: #15959a;
     color: var(--color3);
 }
@@ -144,14 +135,16 @@
         min-width: 100%;
         box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     }
-    .skillstitle{
-        font-size: 1.7rem;
-    }
-    .skill-name{
+    .skilllist{
         width: 100%;
-    height: 150PX;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        row-gap: 0;
+        column-gap: 10px;
+        
     }
-    .description{
-        display: none;
+    .skill{
+        font-size: 1rem;
+        height: 100px;
     }
 }
