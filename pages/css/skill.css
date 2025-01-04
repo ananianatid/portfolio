@@ -127,6 +127,11 @@
     color: var(--color3);
 }
 
+.skill.tailwind{
+    background-color: #06b6d4;
+    color: var(--color3);
+}
+
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
