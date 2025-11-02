@@ -131,6 +131,10 @@
     background-color: #06b6d4;
     color: var(--color3);
 }
+.skill.laravel{
+    background-color: #F05340;
+    color: var(--color3);
+}
 
 
 
