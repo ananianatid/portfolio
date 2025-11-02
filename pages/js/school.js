@@ -40,6 +40,18 @@ const diplomes = [
         titre: "licence 1",
         lieu: "Lomé, Togo",
         anneeDebut: "2023-2024",
+    },
+    {
+        titre: "licence 2",
+        lieu: "Lomé, Togo",
+        anneeDebut: "2024-2025",
+    },
+    {
+        titre: "licence 2",
+        lieu: "Lomé, Togo",
+        description: "En cours",
+
+        anneeDebut: "2025-2026",
     }
 ];
 
